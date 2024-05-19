@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Notes</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <h1 class="pageTitle">Book Notes</h1>
+    <div class="booksContainer">
+        <% for(const book of books) { %>
+            <div>
+                <div class="bookHeaderContainer">
+                    <figure><img class="bookCover" src="./images/AlgorithmCover.jpg"
+                                loading="lazy" alt="<%= book.book_name %>"></figure>
+                    <div>
+                        <h2><%= book.book_name %></h2>
+                        <small>Date read: <%= book.reading_date %>. How strongly I recommend it: <strong><%= book.book_ratings %></strong>/1</small>
+                        <p>Everything is negotiable. Challenge authority. You have the power in any situation. This is how
+                            to realize it and use it. A must-read classic from 1980 from a master negotiator. My notes here
+                            aren’t enough because the little book is filled with so many memorable stories — examples of
+                            great day-to-day moments of negotiation that will stick in your head for when you need them. (I
+                            especially loved the one about the power of the prisoner in solitary confinement.) So go buy and
+                            read the book. I’m giving it a 10/10 rating even though the second half of the book loses steam,
+                            because the first half is so crucial.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        <% } %>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+body {
+    background-image: url(../images/BookNotes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.pageTitle {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    margin: 0px;
+}
+
+.booksContainer {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    height: 20rem;
+    margin: 1rem 20%;
+    padding: 0px;
+    border-radius: 7px;
+    overflow: auto;
+    background-color: rgba(0,0,0, 0.6);
+}
+  
+.blogContainer::-webkit-scrollbar { width: 0 !important }
+
+.bookHeaderContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+figure {
+    width: 10rem;;
+    margin: 1rem;
+}
+
+.bookCover {
+    width: 9rem;
+    height: 12rem;
+    border-radius: 7px;;
+}
+
+.bookName {
+    font-size: 3rem;
+}
+
+small {
+    height: 1rem;;
+}
